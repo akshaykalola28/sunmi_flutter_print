@@ -544,7 +544,7 @@ public class SunmiFlutterPrintPlugin implements MethodCallHandler {
       return;
     }
     try {
-      sunmiPrinterService.printColumnsText(textArray,widthArray,alignArray, null);
+      sunmiPrinterService.printColumnsString(textArray,widthArray,alignArray, null);
     } catch (RemoteException e) {
       handleRemoteException(e);
     }
